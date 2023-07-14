@@ -1,0 +1,17 @@
+.main-top {
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(20px, 2.991vw, 35px);
+  align-items: center;
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(25px, 3.846vw, 45px);
+    line-height: 104.6%;
+    text-align: center;
+    color: rgba(var(--cl-c),1.0);
+    max-width: 1032px;
+  }
+}

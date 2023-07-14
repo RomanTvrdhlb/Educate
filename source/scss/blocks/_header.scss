@@ -1,0 +1,21 @@
+.header {
+  padding: clamp(15px, 1.709vw, 20px) 0 clamp(20px, 2.991vw, 35px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+   justify-content: center;
+  }
+
+  &__logo {
+
+    @include tablet {
+      svg {
+        width: clamp(120px, 17.692vw, 207px);
+        height: auto;
+      }
+    }
+  }
+
+}

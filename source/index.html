@@ -1,0 +1,676 @@
+@include('partials/head.html')
+
+<body class="home">
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-section__box">
+          <div class="hero-section__top">
+            <p class="hero-section__subtitle">Маршрутна карта абітурієнта</p>
+            <h1 class="hero-section__title">
+              <span class="blue-text">Твоє <i class="red-text">європейське<br> </i>майбутнє </span>
+              <svg width='101' height='67'>
+                <use href='img/sprite/sprite.svg#flag'></use>
+              </svg>
+            </h1>
+          </div>
+
+          <div class="hero-section__user">
+            <div class="hero-section__picture">
+              <picture>
+                <source type='image/webp' srcset='img/user1.webp'>
+                <img width='170' height='170' src='img/user1.png' alt='image'>
+              </picture>
+            </div>
+            <p class="hero-section__user-deskr">Радий вас вітати!</p>
+          </div>
+          <div class="hero-section__inner">
+            <p>Моє ім’я <i class="blue-text">Євген Дубенко</i> і я засновник освітньої агенції <i
+                class="blue-text">«Educate Agency»</i> — №1 в Україні за кількістю
+              абітурієнтів, які стали студентами ВНЗ в країнах ЄС з нашою допомогою.</p>
+
+            <p class="mode-text">В цьому матеріалі ще до старту онлайн вебінару, на який ви зареєструвались і в етері
+              якого я на вас
+              обов'язково чекатиму, <i class="blue-text">я розповім вам деякі важливі деталі про вступ до ВНЗ, навчання
+                та життя в Словаччині,</i>
+              які вам не дуже захочуть розкривати або просто не знатимуть про них в інших освітніх агенціях</p>
+          </div>
+          <button class="down-button">
+            <svg width='100' height='100'>
+              <use href='img/sprite/sprite.svg#arrow-d'></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container container--mode">
+        <div class="faq-section__box">
+
+          <ul class="check-list">
+            <li class="check-list__item">
+              <svg width="50" height="50">
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <p>Що таке <i class="blue-text">стратегія побудови кар’єри в Європі</i> і чому варто з неї починати</p>
+            </li>
+            <li class="check-list__item">
+              <svg width="50" height="50">
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <p>Як <i class="blue-text">обрати університет та визначити спеціальність,</i> яка підійде саме вам</p>
+            </li>
+            <li class="check-list__item">
+              <svg width="50" height="50">
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <p>Як отримувати <i class="blue-text">стипендію</i> від <i class="blue-text--mode">300 €</i> до <i
+                  class="blue-text--mode">1000 €</i></p>
+            </li>
+            <li class="check-list__item">
+              <svg width="50" height="50">
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <p>Як потрапити в класний <i class="blue-text">державний гуртожиток</i></p>
+            </li>
+            <li class="check-list__item">
+              <svg width="50" height="50">
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <p>Як <i class="blue-text">влаштувати побут</i> та жити цікавим студентським життям</p>
+            </li>
+            <li class="check-list__item">
+              <svg width="50" height="50">
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <p>Які <i class="blue-text">витрати</i> планувати на вступну кампанію</p>
+            </li>
+            <li class="check-list__item">
+              <svg width="50" height="50">
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <p>Покроковий <i class="blue-text">план</i> дій для гарантованого <i class="blue-text">вступу на бюджет до
+                  ВНЗ Словаччини</i></p>
+            </li>
+          </ul>
+
+          <div class="faq-section__deskr">
+            <p>Зрозуміло, що <b>на вебінарі ми більш детально зупинимось на цих та інших важливих темах,</b> які будуть
+              актуальними для вас на шляху до вступу до ВНЗ Словаччини та успішного навчання… </p>
+            <p><b>А зараз ми закладемо необхідний базис, щоб ви вже могли краще розуміти, як насправді відбувається
+                підготовка до вступу до ВНЗ Словаччини</b> та позбутись хибних уявлень та міфів про вступ до
+              університету та
+              навчання за кордоном, які блукають теренами інтернету. </p>
+          </div>
+        </div>
+        <div class="faq-section__content">
+          <div class="faq-section__picture">
+            <picture>
+              <source type='image/webp' srcset='img/img1.webp'>
+              <img width='770' height='350' src='img/img1.png' alt='image'>
+            </picture>
+          </div>
+
+          <div class="main-deskr">
+            <p>Маршрутна карта буде однаково корисною як для <b>абітурієнтів,</b> так і для їх <b>батьків,</b> отже, в деяких його
+              частинах я буду звертатись до кожного з вас окремо 😉
+              </p>
+              <p>Тому, будь ласка, приділіть 10-15 хвилин свого часу та дуже уважно зануртесь у зміст кожного абзацу цієї
+                маршрутної карти.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- <section class="hero-section">
+      <div class="container">
+        <div class="hero-section__box">
+
+          <div class="hero-section__row">
+            <ul class="hero-section__list">
+              <li class="hero-section__list-item">
+                <svg width='45' height='45'>
+                  <use href='img/sprite/sprite.svg#calendar'></use>
+                </svg>
+                <span class="date"></span>
+              </li>
+              <li class="hero-section__list-item">
+                <svg width='45' height='45'>
+                  <use href='img/sprite/sprite.svg#timer'></use>
+                </svg>
+                19:00
+              </li>
+            </ul>
+
+            <div class="hero-section__info">
+              <svg width='70' height='70'>
+                <use href='img/sprite/sprite.svg#gerb'></use>
+              </svg>
+
+              <p>
+                <span class="brush">Безкоштовний вебінар</span> від засновника освітньої агенції №1 в Україні 
+              </p>
+            </div>
+
+            <h1 class="hero-section__title">
+              <span class="red-text">Як гарантовано вступити на бюджет до ВНЗ </span>
+              <span class="blue-text">Словаччини учням  9, 10, 11 класів</span>
+            </h1>
+          </div>
+
+          <div class="hero-section__image">
+            <picture>
+              <source type='image/webp' media='(max-width: 767px)' srcset='img/img--mobile.webp'>
+              <source media='(max-width: 767px)' srcset='img/img--mobile.png'>
+              <source type='image/webp' srcset='img/img.webp'>
+              <img loading='lazy' width='586' height='575' src='img/img.png' alt='image'>
+            </picture>
+          </div>
+
+          <ul class="check-list">
+            <li class="check-list__item">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <span>
+                <i class="brush">Вступ</i> до університету <i class="brush">без ЗНО</i> / <b class="red-text brush">НМТ</b>
+              </span>
+            </li>
+            <li class="check-list__item">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <span>
+                <i class="brush">Стипендія</i> від 300 € до 1000 €
+              </span>
+            </li>
+            <li class="check-list__item">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <span>
+                <i class="brush">Диплом європейського зразка</i>
+              </span>
+            </li>
+            <li class="check-list__item">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <span>
+                Офіційний <i class="brush">вид на проживання в ЄС</i>
+              </span>
+            </li>
+            <li class="check-list__item">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+              <span>
+                <i class="brush">Кар’єра</i> у будь-якій країні <i class="brush">Європи</i>
+              </span>
+            </li>
+          </ul>
+
+          <a href="#form" class="main-button main-button--blue hero-section__btn">
+            Зареєструватись на вебінар
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="second-secton">
+      <div class="container">
+        <div class="second-secton__box">
+          <h2 class="second-secton__title">
+            Одразу після реєстрації ви отримаєте у
+            <span><i class="red-text">подарунок</i></span> <br>
+            <span><i class="blue-text">детальну маршрутну карту</i></span> шляху абітурієнта від наміру <br> вступити до ВНЗ і до старту навчання на бюджеті в <br> Словаччині
+          </h2>
+
+
+          <div class="second-secton__image">
+            <picture>
+              <source type='image/webp' srcset='img/phone.webp'>
+              <img loading='lazy' width='414' height='720' src='img/phone.png' alt='image'>
+            </picture>
+          </div>
+
+          <div class="second-secton__info">
+            <p>
+              Пройдіть реєстрацію та отримайте <i class="brush">подарунок</i>
+            </p>
+            <a href="#form" class="main-button main-button--blue">
+              Зареєструватись
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="invite-section">
+      <div class="container">
+        <div class="invite-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Кого ми запрошуємо на вебінар
+            </h2>
+          </div>
+
+          <ul class="invite-section__list">
+            <li class="invite-section__item">
+              <div class="invite-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/img4.webp'>
+                  <img loading='lazy' width='470' height='300' src='img/img4.png' alt='image'>
+                </picture>
+              </div>
+              <div class="invite-section__info">
+                <h3 class="invite-section__title">
+                  <span class="brush">
+                    Абітурієнтів
+                  </span>
+                </h3>
+                <p>
+                  Які бажають навчатися у ВНЗ за кордоном після 9 або 11 класу та побудувати міжнародну кар’єру
+                </p>
+              </div>
+            </li>
+            <li class="invite-section__item">
+              <div class="invite-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/img5.webp'>
+                  <img loading='lazy' width='470' height='300' src='img/img5.png' alt='image'>
+                </picture>
+              </div>
+              <div class="invite-section__info">
+                <h3 class="invite-section__title">
+                  <span class="brush">
+                    Батьків
+                  </span>
+                </h3>
+                <p>
+                  Які хочуть створити європейське майбутнє для своїх дітей та дізнатися про правильну підготовку до вступу у ВНЗ Словаччини
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="spiker-section">
+      <div class="container">
+        <div class="spiker-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Спікер вебінару
+            </h2>
+          </div>
+
+
+          <div class="spiker-section__inner">
+              <div class="spiker-section__top">
+                <div class="spiker-section__descr">
+                  <p class="spiker-section__name">
+                    <i class="brush">
+                      Євген Дубенко
+                    </i>
+                  </p>
+
+                  <span class="spiker-section__info">
+                    <svg width='60' height='60'>
+                      <use href='img/sprite/sprite.svg#gerb'></use>
+                    </svg>
+                    Засновник освітньої агенції <br> № 1 в Україні за кількістю <br> студентів у ВНЗ країн ЄС
+                  </span>
+
+                </div>
+                <svg width='310' height='116'>
+                  <use href='img/sprite/sprite.svg#logo'></use>
+                </svg>
+              </div>
+
+              <div class="spiker-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/img6.webp'>
+                  <img loading='lazy' width='404' height='518' src='img/img6.png' alt='image'>
+                </picture>
+
+                <div class="spiker-section__descr">
+                  <p class="spiker-section__name">
+                    <i class="brush">
+                      Євген Дубенко
+                    </i>
+                  </p>
+
+                  <span class="spiker-section__info">
+                    Засновник освітньої агенції № 1 в Україні за кількістю студентів у ВНЗ країн ЄС
+                  </span>
+
+                </div>
+
+              </div>
+
+              <ul class="spiker-section__list">
+                <li class="spiker-section__item hidden-desktop">
+                  <svg width='55' height='55'>
+                    <use href='img/sprite/sprite.svg#gerb'></use>
+                  </svg>
+
+                  <svg width='150' height='55'>
+                    <use href='img/sprite/sprite.svg#logo'></use>
+                  </svg>
+                </li>
+                <li class="spiker-section__item">
+                  <p>
+                    <i class="brush">
+                      1700+
+                    </i>
+                    абітурієнтів стали студентами у ВНЗ Словаччини та Чехії
+                  </p>
+                </li>
+                <li class="spiker-section__item">
+                  <p>
+                    <i class="brush">
+                      8 років
+                    </i>
+                    успішно допомагаєм абітурієнтам зі всієї України
+                  </p>
+                </li>
+                <li class="spiker-section__item">
+                  <p>
+                    <i class="brush">
+                      100%
+                    </i>
+                    абітурієнтів, які звернулись до нас, вступили до ВНЗ країн ЄС
+                  </p>
+                </li>
+                <li class="spiker-section__item">
+                  <p>
+                    Офіційні угоди про співпрацю з
+                    <i class="brush">
+                      33 найкращими ВНЗ
+                    </i>
+                    Словаччини
+                  </p>
+                </li>
+                <li class="spiker-section__item">
+                  <p>
+                    <i class="brush">
+                      60+
+                    </i>
+                    експертів з профорієнтації, консультантів та кураторів в Україні та Словаччині
+                  </p>
+                </li>
+              </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <div class="container">
+        <div class="video-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Про нас знімають сюжети провідні телеканали країни
+            </h2>
+
+            <svg width='75' height='75'>
+              <use href='img/sprite/sprite.svg#gerb'></use>
+            </svg>
+          </div>
+
+          <div class="video-section__inner">
+            <ul class="video-list">
+              <li class="video-list__item" data-src="https://www.youtube.com/watch?v=GjbBI3_T1AI">
+                <div class="video-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/img2.webp'>
+                    <img loading='lazy' width='570' height='320' src='img/img2.png' alt='image'>
+                  </picture>
+                </div>
+
+                <button class="video-list__btn">
+                  <svg width='40' height='40'>
+                    <use href='img/sprite/sprite.svg#play'></use>
+                  </svg>
+                  Переглянути
+                </button>
+              </li>
+              <li class="video-list__item" data-src="https://www.youtube.com/watch?v=d02agnwobKA">
+                <div class="video-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/img3.webp'>
+                    <img loading='lazy' width='570' height='320' src='img/img3.png' alt='image'>
+                  </picture>
+                </div>
+
+                <button class="video-list__btn">
+                  <svg width='40' height='40'>
+                    <use href='img/sprite/sprite.svg#play'></use>
+                  </svg>
+                  Переглянути
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="webinar-section">
+      <div class="container">
+        <div class="webinar-section__box">
+          <div class="webinar-section__inner">
+            <div class="webinar-section__top">
+              <h2 class="webinar-section__title">
+                Програма вебінару
+              </h2>
+
+              <ul class="webinar-section__list">
+                <li class="webinar-section__list-item">
+                  <svg width='40' height='40'>
+                    <use href='img/sprite/sprite.svg#calendar'></use>
+                  </svg>
+                  <span class="date"></span>
+                </li>
+                <li class="webinar-section__list-item">
+                  <svg width='40' height='40'>
+                    <use href='img/sprite/sprite.svg#timer'></use>
+                  </svg>
+                  19:00
+                </li>
+              </ul>
+
+            </div>
+            <ul class="check-list">
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                Чому Словаччина — це прекрасний старт для навчання в Європі
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                Як обрати університет та визначити спеціальність, яка підійде саме вам
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                Як отримувати стипендію від 300 € до 1000 €
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                Які витрати планувати на всю вступну кампанію
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                Скільки коштує життя студента в Словаччині
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                Як за 3 місяці розуміти словацьку мову для навчання у ВНЗ
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                Як студенту отримати найкращі умови в гуртожитку
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#warn'></use>
+                </svg>
+                Яких помилок не варто припускатись, щоб не втратити наступний навчальний рік
+              </li>
+              <li class="check-list__item">
+                <svg width="50" height="50">
+                  <use href='img/sprite/sprite.svg#plus'></use>
+                </svg>
+                <b>Покроковий план гарантованного вступу до ВНЗ на бюджет — від вибору спеціальності до зачислення</b>
+              </li>
+            </ul>
+          </div>
+          <a href="#form" class="main-button main-button--yellow">
+            Зареєструватись на вебінар безкоштовно
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title faq-section__title">
+              Чому абітурієнти обирають Словаччину?
+            </h2>
+          </div>
+
+
+          <ul class="faq-list">
+            <li class="faq-list__item">
+              <div class="faq-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/fag/img.webp'>
+                  <img loading='lazy' width='574' height='191' src='img/fag/img.png' alt='image'>
+                </picture>
+              </div>
+              <p>
+                <i class="brush">
+                  Словацька мова одна з найлегших для вивчення українцями
+                </i>
+              </p>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/fag/img2.webp'>
+                  <img loading='lazy' width='574' height='191' src='img/fag/img2.png' alt='image'>
+                </picture>
+              </div>
+              <p>
+                <i class="brush">
+                  Офіційний вид на проживання та дозвіл на працевлаштування в ЄС
+                </i>
+              </p>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/fag/img3.webp'>
+                  <img loading='lazy' width='574' height='191' src='img/fag/img3.png' alt='image'>
+                </picture>
+              </div>
+              <p>
+                <i class="brush">
+                  ЄС фінансує навчання українських студентів на бюджеті у ВНЗ
+                </i>
+              </p>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__image">
+                <picture>
+                  <source type='image/webp' srcset='img/fag/img4.webp'>
+                  <img loading='lazy' width='574' height='191' src='img/fag/img4.png' alt='image'>
+                </picture>
+              </div>
+              <p>
+                <i class="brush">
+                  Диплом європейського зразка, що дає можливість побудувати кар’єру у <br>будь-якій країні ЄС
+                </i>
+              </p>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="form">
+      <div class="container">
+        <div class="form-section__box">
+          <h2 class="form-section__title">
+            <span class="red-text">
+              Заповнюйте форму та натискайте на кнопку,
+            </span>
+            щоб зареєструватись на вебінар і дізнатись, як гарантовано вступити на бюджет до ВНЗ Словаччини
+          </h2>
+
+          <form class="form-section__form main-form">
+            <ul class="main-form__list">
+              <li class="main-form__item">
+                <input placeholder="Ваше ім’я" type="text" name="name" class="input-name">
+              </li>
+              <li class="main-form__item">
+                <input placeholder="Email" type="email" name="email" class="input-email">
+              </li>
+              <li class="main-form__item">
+                <svg width='30' height='20'>
+                  <use href='img/sprite/sprite.svg#flag'></use>
+                </svg>
+                <input placeholder="+380" type="tel" name="phone" class="input-phone">
+              </li>
+            </ul>
+
+            <button class="main-form__btn main-button main-button--orange">
+              Пройти безкоштовну реєстрацію
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
