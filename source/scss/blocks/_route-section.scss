@@ -11,8 +11,8 @@
     &__inner{
         margin: 0 auto;
         max-width: var(--content-width);
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
         grid-gap: clamp(30px, 5.128vw, 60px);
 
         @include small-tablet{
@@ -49,6 +49,13 @@
         grid-gap: clamp(15px, 2.137vw, 25px);
     }
 
+    &__down{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 5px;
+        align-items: center;
+    }
+
     .main-deskr{
         background-color: rgba(var(--bg-a),1.0);
         width: 100%;
@@ -69,5 +76,33 @@
         svg{
             width: clamp(20px, 2.991vw, 35px);
         }
+    }
+}
+
+.strategy-section{
+    .route-section{
+
+        &__box{
+            grid-gap: 25px;
+        }
+
+        &__wrapper{
+            grid-gap: clamp(30px, 4.274vw, 50px);
+
+            &--mode{
+                grid-gap: clamp(25px, 3.419vw, 40px);
+            .check-list{
+                max-width: 100%;
+            }
+            }
+        }
+    }
+
+    .main-deskr{    
+        margin-bottom: calc(clamp(30px, 5.128vw, 60px) - 25px);
+        *{
+        max-width: 910px;
+    }
+
     }
 }

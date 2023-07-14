@@ -32,4 +32,15 @@
         font-weight: 700;
         line-height: 138%;
     }
+
+    &--mode{
+        background-color: rgba(var(--bg-h),1.0);
+
+        p {
+            max-width: 770px;
+            b{
+                text-decoration: none;
+            }
+        }
+    }
 }

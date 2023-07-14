@@ -1,8 +1,13 @@
 .about-section {
   padding: clamp(20px, 2.564vw, 30px) 0 clamp(40px, 5.128vw, 60px);
 
-  .main-pretitle {
-    padding-bottom: clamp(15px, 2.137vw, 25px);
+  &--mode{
+    padding: clamp(20px, 2.564vw, 30px) 0 clamp(60px, 7.692vw, 90px);
+
+    .about-section__inner{
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
   }
 
   &__box {
@@ -14,17 +19,54 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    grid-gap: clamp(15px, 2.137vw, 25px);
+    grid-gap: clamp(30px, 4.274vw, 50px);
+    position: relative;
 
     &--mode {
-      grid-gap: clamp(30px, 4.274vw, 50px);
+      grid-gap: clamp(15px, 2.137vw, 25px);
 
-      .main-pretitle {
-        padding-bottom: 0;
+   
+    }
+
+    &--line{
+      padding-top: clamp(70px, 10.256vw, 120px);
+
+      &::before{
+        position: absolute;
+        content: '';
+        top: calc((clamp(70px, 10.256vw, 120px) / 2) - (clamp(35px, 5.128vw, 60px) / 2));
+        left: 50%;
+        transform: translate(-50%, 50%);
+        height: 3px;
+        width: var(--content-width--mode);
+        background-image: var(--line);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: repeat-x;
       }
     }
   }
 
+  &__wrapp{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    align-items: center;
+
+    &--mode{
+      grid-gap: clamp(10px, 1.709vw, 20px);
+
+      .down-button{
+        margin-top: -10px;
+      }
+    }
+  }
+
+  &__deskr{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 2.137vw, 25px);
+  }
   &__picture{
     padding-top: clamp(5px, 0.855vw, 10px);
   }
@@ -49,7 +91,12 @@
 
     p {
       font-size: clamp(16px, 1.795vw, 21px);
-      line-height: 138, 095%;
+      line-height: 138.095%;
+      max-width: 700px;
+
+      b{
+        text-decoration: none;
+      }
     }
   }
 }
