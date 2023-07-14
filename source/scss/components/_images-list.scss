@@ -1,0 +1,10 @@
+.images-list{
+    display: flex;
+    align-items: center;
+    grid-gap: 20px clamp(15px, 1.709vw, 20px);
+    max-width: 770px;
+
+    @include ios{
+        flex-direction: column;
+    }
+}

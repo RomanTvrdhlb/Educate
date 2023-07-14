@@ -55,9 +55,9 @@
   --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
   --cl-c: #{HexToRGB(#006FBB)}; // rgba(var(--cl-c),1.0);
   --cl-d: #{HexToRGB(#353B4B)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#F26640)}; // rgba(var(--cl-e),1.0);
 
 
-  --cl-e: #{HexToRGB(#006FBB)}; // rgba(var(--cl-e),1.0);
   --cl-f: #{HexToRGB(#DC3619)}; // rgba(var(--cl-f),1.0);
   --cl-g: #{HexToRGB(#FCDCD1)}; // rgba(var(--cl-g),1.0);
   --cl-h: #{HexToRGB(#FF4A00)}; // rgba(var(--cl-h),1.0);
@@ -74,7 +74,7 @@
   --bg-e: #{HexToRGB(#006FBB)}; // rgba(var(--bg-e),1.0);
   --bg-f: #{HexToRGB(#FF4A00)}; // rgba(var(--bg-f),1.0);
   --bg-g: #{HexToRGB(#FDFBCE)}; // rgba(var(--bg-g),1.0);
-  // --bg-h: #{HexToRGB(#FF4A00)}; // rgba(var(--bg-h),1.0);
+  --bg-h: #{HexToRGB(#E6F6FF)}; // rgba(var(--bg-h),1.0);
 
 
 
@@ -87,6 +87,7 @@
 
 // --------------- default border cl variable ---------------
   --br-a: #ffffff; // var(--br-a);
+  --br-b: #006FBB; // var(--br-b);
 
 
 // --------------- gradient background cl variable ---------------

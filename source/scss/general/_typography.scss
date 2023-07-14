@@ -12,14 +12,14 @@ span {
   padding: 0;
 
   
-  .purpure-text {
-    color:  rgba(var(--cl-l),1.0);
-    display: inline;
-    width: 100%;
-  }
+  // .purpure-text {
+  //   color:  rgba(var(--cl-l),1.0);
+  //   display: inline;
+  //   width: 100%;
+  // }
 
   .blue-text {
-    color: rgba(var(--cl-e),1.0);
+    color: rgba(var(--cl-c),1.0);
     display: inline;
     width: 100%;
 
@@ -29,18 +29,18 @@ span {
     }
   }
 
-  .brush {
-    background-image: var(--brush);
-    background-size: 100% 100%;
-    background-repeat: repeat-x;
-    background-position: center;
-    width: 100%;
+  // .brush {
+  //   background-image: var(--brush);
+  //   background-size: 100% 100%;
+  //   background-repeat: repeat-x;
+  //   background-position: center;
+  //   width: 100%;
 
-    font-size: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-    color: inherit;
-  }
+  //   font-size: inherit;
+  //   font-style: inherit;
+  //   font-weight: inherit;
+  //   color: inherit;
+  // }
 
   .red-text {
     color:  rgba(var(--cl-f),1.0);
@@ -81,60 +81,102 @@ span {
   }
 
 }
-.main-button {
-  svg {
-    fill: currentColor;
-  }
 
-  text-align: center;
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: clamp(16px, 1.966vw, 23px);
-  line-height: 126%;
-  color:  rgba(var(--cl-a),1.0);
-  border-radius: clamp(50px, 4.701vw, 55px);
-  padding: clamp(10px, 2.137vw, 25px) clamp(10px, 5.983vw, 70px);
-  width: fit-content;
-  transition: all .3s ease;
-
-  &--blue {
-    background: rgba(var(--bg-e),1.0);
-
-    &:hover {
-      background: rgba(var(--bg-d),1.0);
-      color: rgba(var(--cl-c),1.0);
-    }
-  }
-
-  &--purpure {
-    background: rgba(var(--bg-l),1.0);
-    color: rgba(var(--cl-a),1.0);
-
-    &:hover {
-      background: rgba(var(--bg-l),0.5);
-      color: rgba(var(--cl-c),1.0);
-    }
-  }
-
-  &--orange {
-    background: rgba(var(--bg-h),1.0);
-    border: 2px solid transparent;
-
-    &:hover {
-      background:#F79F88;
-      border-color: var(--br-a);
-    }
-  }
-
-  &--yellow {
-    background: rgba(var(--bg-j),1.0);
-    color:  rgba(var(--cl-c),1.0);
-
-    &:hover {
-      background:rgba(var(--bg-h),1.0);
-      color: rgba(var(--cl-a),1.0);
-    }
-
-  }
+.mode-deskr{
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(10px, 1.709vw, 20px);
 }
+
+p{
+      font-family: var(--font-family);
+      font-size: clamp(16px, 1.795vw, 21px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138.095%;
+      color: rgba(var(--cl-d),1.0);
+
+      b{
+        font-weight: 700;
+    }
+}
+
+.main-pretitle{
+  color: rgba(var(--cl-d),1.0);
+  font-family: var(--font-family);
+  font-size: clamp(18px, 2.051vw, 24px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120.833%;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+
+.border-text{
+  display: flex;
+  padding: clamp(10px, 1.282vw, 15px) clamp(15px, 2.137vw, 25px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1.5px solid var(--br-b);
+  line-height: 130.556%;
+  font-size: clamp(14px, 1.538vw, 18px);
+}
+// .main-button {
+//   svg {
+//     fill: currentColor;
+//   }
+
+//   text-align: center;
+//   font-family: var(--font-family);
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: clamp(16px, 1.966vw, 23px);
+//   line-height: 126%;
+//   color:  rgba(var(--cl-a),1.0);
+//   border-radius: clamp(50px, 4.701vw, 55px);
+//   padding: clamp(10px, 2.137vw, 25px) clamp(10px, 5.983vw, 70px);
+//   width: fit-content;
+//   transition: all .3s ease;
+
+//   &--blue {
+//     background: rgba(var(--bg-e),1.0);
+
+//     &:hover {
+//       background: rgba(var(--bg-d),1.0);
+//       color: rgba(var(--cl-c),1.0);
+//     }
+//   }
+
+//   &--purpure {
+//     background: rgba(var(--bg-l),1.0);
+//     color: rgba(var(--cl-a),1.0);
+
+//     &:hover {
+//       background: rgba(var(--bg-l),0.5);
+//       color: rgba(var(--cl-c),1.0);
+//     }
+//   }
+
+//   &--orange {
+//     background: rgba(var(--bg-h),1.0);
+//     border: 2px solid transparent;
+
+//     &:hover {
+//       background:#F79F88;
+//       border-color: var(--br-a);
+//     }
+//   }
+
+//   &--yellow {
+//     background: rgba(var(--bg-j),1.0);
+//     color:  rgba(var(--cl-c),1.0);
+
+//     &:hover {
+//       background:rgba(var(--bg-h),1.0);
+//       color: rgba(var(--cl-a),1.0);
+//     }
+
+//   }
+// }

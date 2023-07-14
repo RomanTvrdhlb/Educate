@@ -1,0 +1,73 @@
+.route-section{
+    background-color: rgba(var(--bg-h),1.0);
+    padding: clamp(20px, 2.564vw, 30px) 0 clamp(40px, 5.128vw, 60px);
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 2.991vw, 35px);
+    }
+
+    &__inner{
+        margin: 0 auto;
+        max-width: var(--content-width);
+       display: flex;
+       flex-direction: column;
+        grid-gap: clamp(30px, 5.128vw, 60px);
+
+        @include small-tablet{
+            max-width: 100%;
+        }
+
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(30px, 5.128vw, 60px);
+    }
+
+    &__deskr{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(15px, 2.137vw, 25px);
+
+        p{
+            i{
+                color: currentColor;
+                font-style: italic;
+                text-decoration-line: underline;
+                text-underline-offset: 3px;
+            }
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(15px, 2.137vw, 25px);
+    }
+
+    .main-deskr{
+        background-color: rgba(var(--bg-a),1.0);
+        width: 100%;
+
+        *{
+        max-width: 770px;
+        font-size: clamp(16px, 1.795vw, 21px);
+        line-height: 138.095%;
+        text-decoration: none;
+    }
+    }
+
+    .check-list{
+        max-width: 680px;
+        align-self: center;
+        grid-gap: clamp(15px, 2.137vw, 25px);
+
+        svg{
+            width: clamp(20px, 2.991vw, 35px);
+        }
+    }
+}

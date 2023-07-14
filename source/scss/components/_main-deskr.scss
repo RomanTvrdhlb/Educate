@@ -23,4 +23,13 @@
             text-underline-offset: 3.5px;
         }
     }
+
+    &__title{
+        color: rgba(var(--cl-e),1.0);
+        font-family: var(--font-family);
+        font-size: clamp(25px, 2.735vw, 32px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 138%;
+    }
 }
