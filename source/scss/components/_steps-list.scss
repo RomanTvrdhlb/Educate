@@ -1,0 +1,25 @@
+.steps-list{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 4.545vw, 35px);
+
+    counter-reset: li;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(15px, 3.247vw, 25px);
+        &::before{
+            position: relative;
+            top:-2px;
+            content:  counter(li) '';
+            counter-increment: li;
+            color: rgba(var(--cl-c),1.0);
+            font-family: var(--font-family2);
+            font-size: clamp(26px, 5.195vw, 40px);
+            font-style: normal;
+            font-weight: 900;
+            line-height: 125%;
+        }
+    }
+}

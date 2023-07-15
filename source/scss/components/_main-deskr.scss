@@ -43,4 +43,29 @@
             }
         }
     }
+
+    &--default{
+       p{
+        font-style: normal;
+       } 
+    }
+
+    &--check{
+        flex-direction: row;
+        align-items: center;
+        grid-gap: 10px;
+        padding: clamp(15px, 2.137vw, 25px) clamp(10px, 2.597vw, 20px);
+        background-color: rgba(var(--bg-g),1.0) !important;
+        p{
+            text-align: start;
+        }
+
+        span{
+            display: flex;
+            align-items: center;
+        }
+        svg{
+            fill: rgba(var(--bg-j),1.0);
+        }
+    }
 }

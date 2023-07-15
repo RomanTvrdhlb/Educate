@@ -1,49 +1,7 @@
 .form-section {
-  background-color: rgba(var(--bg-g),1.0);
-  padding-top: clamp(40px, 5.556vw, 65px);
-  padding-bottom: 90px;
-  background-image: var(--round-bg);
-  background-position: 120% 50%;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-  background-size: 33vw;
+  background-color: rgba(var(--bg-m),1.0);
+  padding: clamp(40px, 7.792vw, 60px) 0;
 
-  @include small-tablet {
-    background-image: none;
-  }
-
-  &::after {
-    position: absolute;
-    content: '';
-    height: clamp(80px, 10.256vw, 120px);
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: translateY(20%) rotate(1deg);
-    background-image: var(--form-section-bottom);
-
-    @include mobile {
-      background-size: contain;
-    }
-    z-index: -1;
-  }
-
-  &::before {
-    width: 100%;
-    top: 0;
-    position: absolute;
-    height: clamp(80px, 17.094vw, 200px);
-    background-image: var(--form-section);
-    background-size: 100% 100%;
-    background-position: center;
-    content: '';
-    transform: translateY(-50%);
-    z-index: -1;
-  }
 
   &__box {
     display: flex;
@@ -62,11 +20,9 @@
     color: rgba(var(--cl-c),1.0);
 
     .red-text {
-      color: rgba(var(--cl-h),1.0);
+      color: rgba(var(--cl-e),1.0);
     }
   }
 
-  &__form {
-    max-width: 700px;
-  }
+
 }

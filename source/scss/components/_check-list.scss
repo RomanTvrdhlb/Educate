@@ -6,18 +6,23 @@
   &__item {
     display: flex;
     align-items: center;
-    gap: 0 clamp(13px, 1.624vw, 19px);
+    gap: 0 clamp(13px, 2.468vw, 19px);
     
     svg {
-      width: clamp(32px, 4.274vw, 50px);
+      width: clamp(32px, 6.494vw, 50px);
       height: auto;
       flex-shrink: 0;
+      fill: rgba(var(--bg-e),1.0);
+
+      &.green{
+        fill: rgba(var(--bg-j),1.0);
+      }
     }
   }
 
   p{
     font-family:  var(--font-family);
-    font-size: clamp(16px, 1.709vw, 20px);
+    font-size: clamp(16px, 2.597vw, 20px);
     letter-spacing: 0.0175em;
     color: rgba(var(--cl-d),1.0);
     font-weight: 500;
@@ -25,6 +30,13 @@
 
     *{
       font-weight: 700;
+    }
+  }
+
+  &--mode{
+
+    p{
+      font-style: italic;
     }
   }
 }

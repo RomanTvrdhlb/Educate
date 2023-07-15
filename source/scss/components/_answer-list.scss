@@ -6,7 +6,7 @@
     &__item{
         display: flex;
         align-items: center;
-        grid-gap: clamp(10px, 1.282vw, 15px);
+        grid-gap: clamp(10px, 1.948vw, 15px);
 
         &:nth-child(odd){
             flex-direction: row-reverse;
@@ -28,8 +28,8 @@
     }
 
     &__image{
-        width: clamp(100px, 12.393vw, 145px);
-        height: clamp(100px, 12.393vw, 145px);
+        width: clamp(100px, 18.831vw, 145px);
+        height: clamp(100px, 18.831vw, 145px);
     }
 
     &__question{
@@ -41,7 +41,7 @@
         font-style: italic;
         font-weight: 400;
         line-height: 138.095%;
-        padding: 10px clamp(15px, 3.419vw, 40px) 10px clamp(15px, 1.709vw, 20px);
+        padding: 10px clamp(15px, 5.195vw, 40px) 10px clamp(15px, 2.597vw, 20px);
         border-radius: 15px ;
         position: relative;
         text-align: center;
@@ -63,4 +63,58 @@
 
     }
 
+
+    &__title{
+        color: rgba(var(--cl-c),1.0);
+        font-family: var(--font-family);
+        font-size:  clamp(18px, 2.987vw, 23px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 126.087%;
+    }
+}
+
+.dialogue-list{
+    grid-gap: clamp(20px, 4.545vw, 35px);
+
+    .answer-list{
+
+        &__item{
+            align-items: flex-end;
+        &:nth-child(odd){
+            flex-direction: row;
+        }
+        &:nth-child(even){
+            flex-direction: row-reverse;
+            .answer-list__question{
+                border-radius: 25px 25px 0px 25px;
+                text-align: end;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    &__question{
+        box-shadow: none;
+        border-radius: 25px 25px 25px 0px;
+        padding: clamp(10px, 2.597vw, 20px) clamp(15px, 3.896vw, 30px) clamp(15px, 3.896vw, 30px);
+        background-color: rgba(var(--bg-a),1.0);
+        color: rgba(var(--cl-d),1.0);
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(5px, 1.299vw, 10px);
+        text-align: start;
+
+        &::before{
+            display: none;
+        }
+
+        @include mobile{
+            br{
+                display: none;
+            }
+        }
+    }
+    }
 }

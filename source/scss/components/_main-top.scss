@@ -1,26 +1,30 @@
 .main-top {
   display: flex;
   flex-direction: column;
-  grid-gap: clamp(20px, 2.564vw, 30px);
+  grid-gap: clamp(20px, 3.896vw, 30px);
   align-items: center;
 
   &__count{
     color: rgba(var(--cl-a),1.0);
     text-align: center;
     font-family: var(--font-family2);
-    font-size: clamp(37px, 5.47vw, 64px);
+    font-size: clamp(37px, 8.312vw, 64px);
     font-style: normal;
     font-weight: 900;
     line-height: 116%;
-    grid-gap: clamp(30px, 5.983vw, 70px);
+    grid-gap: clamp(30px, 9.091vw, 70px);
     display: flex;
     align-items: center;
 
     &::before, &::after{
       content: '';
       background-color: rgba(var(--cl-a),1.0);
-      width: Min(24.444vw, 286px);
+      width: Min(33vw, 286px);
       height: 4px;
+
+      @include mobile{
+        width: Min(30.5vw, 286px);
+      }
     }
 
     &::after{
@@ -33,7 +37,7 @@
     text-align: center;
     color: rgba(var(--cl-d),1.0);
     font-family: var(--font-family2);
-    font-size: clamp(20px, 2.564vw, 30px);
+    font-size: clamp(20px, 3.896vw, 30px);
     font-style: normal;
     font-weight: 900;
     line-height: 125%;

@@ -1,9 +1,26 @@
+header{
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: clamp(97px, 28.646vw, 550px); 
+    height: clamp(58px, 17.188vw, 330px);
+    right: -1%;
+    top: 0;
+    background-image: url(../img/sprite/flag-m.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
 .header {
-  padding: clamp(15px, 1.709vw, 20px) 0 clamp(20px, 2.991vw, 35px);
+  padding: clamp(15px, 2.597vw, 20px) 0 clamp(20px, 4.545vw, 35px);
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   @include mobile {
    justify-content: center;
   }
@@ -12,7 +29,7 @@
 
     @include tablet {
       svg {
-        width: clamp(120px, 17.692vw, 207px);
+        width: clamp(120px, 26.883vw, 207px);
         height: auto;
       }
     }

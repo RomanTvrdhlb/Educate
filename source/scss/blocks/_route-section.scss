@@ -1,108 +1,125 @@
-.route-section{
-    background-color: rgba(var(--bg-h),1.0);
-    padding: clamp(20px, 2.564vw, 30px) 0 clamp(40px, 5.128vw, 60px);
+.route-section {
+  background-color: rgba(var(--bg-h), 1);
+  padding: clamp(20px, 3.896vw, 30px) 0 clamp(40px, 7.792vw, 60px);
 
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
-        grid-gap: clamp(20px, 2.991vw, 35px);
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 4.545vw, 35px);
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 7.792vw, 60px);
+
+    @include small-tablet {
+      max-width: 100%;
     }
 
-    &__inner{
-        margin: 0 auto;
-        max-width: var(--content-width);
-        display: flex;
-        flex-direction: column;
-        grid-gap: clamp(30px, 5.128vw, 60px);
-
-        @include small-tablet{
-            max-width: 100%;
-        }
-
+    &--mode{
+        margin: initial;
+        max-width: 100%;
+        grid-gap: clamp(30px, 6.494vw, 50px);
     }
+  }
 
-    &__box{
-        display: flex;
-        flex-direction: column;
-        grid-gap: clamp(30px, 5.128vw, 60px);
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 7.792vw, 60px);
+  }
+
+  &__deskr {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 3.247vw, 25px);
+
+    p {
+      i {
+        color: currentColor;
+        font-style: italic;
+      }
     }
+  }
 
-    &__deskr{
-        display: flex;
-        flex-direction: column;
-        grid-gap: clamp(15px, 2.137vw, 25px);
+  &__list{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 6.494vw, 50px);
+  }
 
-        p{
-            i{
-                color: currentColor;
-                font-style: italic;
-                text-decoration-line: underline;
-                text-underline-offset: 3px;
-            }
-        }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 3.247vw, 25px);
+
+    .border-text{
+            padding: clamp(10px, 1.948vw, 15px) clamp(25px, 7.792vw, 60px);
     }
+  }
 
-    &__content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-gap: clamp(15px, 2.137vw, 25px);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: clamp(15px, 3.247vw, 25px);
+  }
+
+  &__down {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    align-items: center;
+  }
+
+  .main-deskr {
+    background-color: rgba(var(--bg-a), 1);
+    width: 100%;
+
+    * {
+      max-width: 770px;
+      font-size: clamp(16px, 1.795vw, 21px);
+      line-height: 138.095%;
+      text-decoration: none;
     }
+  }
 
-    &__down{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 5px;
-        align-items: center;
+  .check-list {
+    max-width: 680px;
+    align-self: center;
+    grid-gap: clamp(15px, 3.247vw, 25px);
+
+    svg {
+      width: clamp(20px, 4.545vw, 35px);
     }
-
-    .main-deskr{
-        background-color: rgba(var(--bg-a),1.0);
-        width: 100%;
-
-        *{
-        max-width: 770px;
-        font-size: clamp(16px, 1.795vw, 21px);
-        line-height: 138.095%;
-        text-decoration: none;
-    }
-    }
-
-    .check-list{
-        max-width: 680px;
-        align-self: center;
-        grid-gap: clamp(15px, 2.137vw, 25px);
-
-        svg{
-            width: clamp(20px, 2.991vw, 35px);
-        }
-    }
+  }
 }
 
-.strategy-section{
-    .route-section{
+.strategy-section {
+  .route-section {
+    &__box {
+      grid-gap: 25px;
+    }
 
-        &__box{
-            grid-gap: 25px;
+    &__wrapper {
+      grid-gap: clamp(30px, 6.494vw, 50px);
+
+      &--mode {
+        grid-gap: clamp(25px, 5.195vw, 40px);
+        .check-list {
+          max-width: 100%;
         }
-
-        &__wrapper{
-            grid-gap: clamp(30px, 4.274vw, 50px);
-
-            &--mode{
-                grid-gap: clamp(25px, 3.419vw, 40px);
-            .check-list{
-                max-width: 100%;
-            }
-            }
-        }
+      }
     }
+  }
 
-    .main-deskr{    
-        margin-bottom: calc(clamp(30px, 5.128vw, 60px) - 25px);
-        *{
-        max-width: 910px;
+  .main-deskr {
+    margin-bottom: calc(clamp(30px, 7.792vw, 60px) - 25px);
+    * {
+      max-width: 910px;
     }
-
-    }
+  }
 }
