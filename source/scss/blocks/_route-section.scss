@@ -1,6 +1,7 @@
 .route-section {
   background-color: rgba(var(--bg-h), 1);
   padding: clamp(20px, 3.896vw, 30px) 0 clamp(40px, 7.792vw, 60px);
+  position: relative;
 
   &__wrapper {
     display: flex;
@@ -39,7 +40,6 @@
 
     p {
       i {
-        color: currentColor;
         font-style: italic;
       }
     }
@@ -113,6 +113,11 @@
 
   &--second{
 
+    .main-subtitle{
+      font-style: italic;
+      background-color: rgba(var(--bg-a),1.0);
+    }
+
     .main-deskr {
       background: rgba(var(--bg-g), 1);
       .underline-text {
@@ -122,6 +127,35 @@
       b{
         font-style: normal;
       }
+    }
+
+    &::before, &::after{
+      position: absolute;
+      content: '';
+      background-image: var(--route-icon);
+      background-position: top right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: Min(32.661vw, 405px);
+      height: Min(50.645vw, 628px);
+      z-index: 0;
+  
+
+      @include small-tablet{
+        display: none;
+      }
+    }
+
+    &::before{
+      left: 0;
+      bottom: 20%;
+    }
+
+    &::after{
+      rotate: 270deg;
+      right: 0;
+      bottom: 0;
+      transform: translate(-60%, 5%);
     }
   }
 
@@ -144,6 +178,35 @@
       }
     }
 }
+
+  &--invite{
+    padding: clamp(20px, 3.896vw, 30px) 0;
+      .main-pretitle{
+        font-size:  clamp(20px, 3.896vw, 30px);
+        line-height: 125%;
+      }
+    &::before{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 25%;
+      background-image: var(--invite-icon);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top left;
+      width: Min(38.306vw, 475px);
+      height: Min(45.645vw, 566px);
+      z-index: 0;
+
+      @include mobile{
+        display: none;
+      }
+    }
+
+    .invite-text{
+      text-align: center;
+    }
+  }
 }
 
 .strategy-section {

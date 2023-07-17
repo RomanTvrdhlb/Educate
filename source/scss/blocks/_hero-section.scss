@@ -1,5 +1,6 @@
 .hero-section {
   padding-bottom: clamp(40px, 5.128vw, 60px);
+  position: relative;
 
   &__box {
     display: flex;
@@ -158,6 +159,7 @@
   &--second {
     padding-bottom: clamp(60px, 11.688vw, 90px);
 
+
     p {
       max-width: 100%;
       b {
@@ -179,6 +181,39 @@
     .down-button {
       margin-top: -15px;
       align-self: center;
+    }
+
+    &::before, &::after{
+      position: absolute;
+      content: '';
+    
+      background-position: top right;
+      background-size: contain;
+      background-repeat: no-repeat;
+   
+      z-index: 0;
+  
+
+      @include tablet{
+        display: none;
+      }
+    }
+
+    &::before{
+      left: 0;
+      top: 50%;
+      background-position: top left;
+      background-image: var(--hero-icon);
+      width: Min(50.887vw, 631px);
+      height: Min(50.887vw, 631px);
+    }
+
+    &::after{
+      background-image: var(--hero-icon-second);
+      width:  Min(37.339vw, 463px);
+      height: Min(37.339vw, 463px);
+      right: 0;
+      bottom: -29%;
     }
   }
 }

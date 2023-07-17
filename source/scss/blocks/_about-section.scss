@@ -1,5 +1,6 @@
 .about-section {
   padding: clamp(20px, 3.896vw, 30px) 0 clamp(40px, 7.792vw, 60px);
+  position: relative;
 
   .check-list {
     align-self: center;
@@ -143,6 +144,26 @@
     }
   }
 
+  &__icon{
+    align-self: center;
+  }
+
+  &__bg{
+    position: absolute;
+    top: 21%;
+    left: 0;
+    z-index: -1;
+
+   img,picture{
+    width: auto;
+    height: Min(37.339vw, 463px);
+   }
+
+   @include tablet{
+    display: none;
+  }
+  }
+
   &--mode{
     padding: clamp(20px, 3.896vw, 30px) 0 clamp(60px, 11.688vw, 90px);
 
@@ -159,6 +180,68 @@
 
   &--road{
     padding: 0 0 clamp(40px, 7.792vw, 60px);
+  }
+
+  &--faq{
+
+    .main-pretitle{
+      text-align: center;
+        @include mobile{
+          br{
+            display: none;
+          }
+        }
+    }
+
+    .count-text{
+      font-family: var(--font-family);
+      font-size: clamp(18px, 2.987vw, 23px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 126.087%;
+     
+
+      i{
+        text-decoration: underline;
+      }
+    }
+
+    &::before, &::after{
+      position: absolute;
+      content: '';
+      background-image: var(--faq-icon);
+      background-position: top right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: Min(25.484vw, 316px);
+      height: Min(50.968vw, 632px);
+      z-index: -1;
+      right: 0;
+
+      @include tablet{
+        display: none;
+      }
+    }
+
+    &::before{
+      top: 5.5%;
+    }
+
+    &::after{
+      bottom: 31%;
+    }
+
+    .about-section__bg--bottom{
+      bottom: 5%;
+      right: 0;
+      top: initial;
+      transform: translateX(120%);
+
+      img,picture{
+        width: auto;
+        height: Min(30.645vw, 380px);
+       }
+    }
   }
 }
 

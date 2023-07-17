@@ -7,4 +7,9 @@
     @include ios{
         flex-direction: column;
     }
+
+
+    &--mode{
+        justify-content: space-between;
+    }
 }
