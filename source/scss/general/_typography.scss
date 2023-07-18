@@ -69,6 +69,12 @@ span {
     padding-left: 37px;
     font-style: italic;
   }
+
+  @include small-tablet{
+    br{
+      display: none;
+    }
+  }
 }
 
 .down-button{
@@ -296,6 +302,7 @@ p{
     justify-content: center;
     padding: clamp(17px, 3.247vw, 25px);
     transition: all .4s;
+    border: solid 2px transparent;
 
     &:hover{
       background-color: rgba(var(--bg-l),1.0);
@@ -315,6 +322,21 @@ p{
       &:hover{
         color: rgba(var(--bg-a),1.0);
         border-color: rgba(var(--bg-h),1.0);
+        background-color: rgba(var(--bg-h),1.0);
+      }
+    }
+
+    &--blue{
+      background-color: rgba(var(--bg-e),1.0);
+      color: rgba(var(--cl-a),1.0);
+      border: 2px solid currentColor;
+      max-width: 551px;
+
+      svg{
+        fill: currentColor;
+      }
+
+      &:hover{
         background-color: rgba(var(--bg-h),1.0);
       }
     }

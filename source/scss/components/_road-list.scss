@@ -36,6 +36,12 @@
         p{
             font-size: clamp(18px, 2.987vw, 23px);
             line-height: 126.087%;
+
+            @include mobile{
+                br{
+                    display: none;
+                }
+            }
         }
     }
 

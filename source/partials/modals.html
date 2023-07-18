@@ -1,3 +1,84 @@
-<div class="overlay fixed-block" data-overlay></div>
+<div class="overlay fixed-block" data-overlay>
+
+    <div class="modal" data-popup="success">
+        <div class="modal__box" role="dialog" aria-modal="true">
+            <button class="close modal__close" aria-label="Закрыть модальное окно">
+                <svg width='50' height='50'>
+                    <use href='img/sprite/sprite.svg#close'></use>
+                </svg>
+            </button>
+            <div class="modal__inner">
+                <span class="modal__icon"><svg width='117' height='75'>
+                  <use href='img/sprite/sprite.svg#success'></use>
+                </svg></span>
+                <span class="modal__title">Успішно!</span>
+            </div>
+            <div class="modal__wrapper">
+                <p>Дякуємо за Вашу заявку!<br>
+                    Найближчим часом з Вами зв’яжеться один з наших експерті.</p>
+                <a href="index.html" class="main-button main-button--transparent">На головну</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-fail" data-popup="fail">
+        <div class="modal__box" role="dialog" aria-modal="true">
+            <button class="close modal__close" aria-label="Закрыть модальное окно">
+                <svg width='50' height='50'>
+                    <use href='img/sprite/sprite.svg#close'></use>
+                </svg>
+            </button>
+            <div class="modal__inner">
+                <span class="modal__icon"><svg width='90' height='90'>
+                  <use href='img/sprite/sprite.svg#fail'></use>
+                </svg></span>
+                <span class="modal__title">Помилка!</span>
+            </div>
+            <div class="modal__wrapper">
+                <p>Щось пішло не так.<br>
+                    Будь ласка, спробуйте ще раз.</p>
+                <a href="index.html" class="main-button main-button--transparent">На головну</a>
+                <a href="#" class="main-button">Повернутись</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-entry" data-popup="entry">
+        <div class="modal__box" role="dialog" aria-modal="true">
+            <button class="close modal__close" aria-label="Закрыть модальное окно">
+                <svg width='50' height='50'>
+                    <use href='img/sprite/sprite.svg#close'></use>
+                </svg>
+            </button>
+
+            <span class="main-form__title">Введіть, будь ласка, ваші данні та натисніть на кнопку</span>
+            <form action="#" class="main-form">
+                <ul class="main-form__list">
+                  <li class="main-form__item">
+                    <input type="text" name="name" class="input-name" placeholder="Ваше ім’я">
+                  </li>
+                  <li class="main-form__item">
+                    <svg width='30' height='20'>
+                      <use href='img/sprite/sprite.svg#flag-ua'></use>
+                    </svg>
+                    <input type="tel" name="phone" class="input-phone" placeholder=" +380">
+                  </li>
+                  <li class="main-form__item">
+                    <input type="text" name="education" class="input-education" placeholder="Напрямок навчання">
+                  </li>
+                </ul>
+        
+                <div class="main-form__bottom">
+                  <button class="main-button">Зареєструватись на консультацію</button>
+        
+                  <p>Після заповнення форми експерт з профорієнтації зв’яжеться з Вами протягом 24 годин.</p>
+                </div>
+        
+              </form>
+        </div>
+    </div>
+
+   
 
 
+</div>

@@ -2,14 +2,14 @@ html {
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 body {
   position: relative;
   overflow-x: hidden;
   width: 100%;
-  // min-height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
   margin: 0;
 
   font-weight: 400;
@@ -267,9 +267,9 @@ input[type="number"] {
   position: relative;
 }
 
-// .overlay {
-//   @include overlay;
-// }
+.overlay {
+  @include overlay;
+}
 
 fieldset {
   margin: 0;
@@ -278,32 +278,45 @@ fieldset {
   border: none;
 }
 
-// .modal {
-//   position: absolute;
-//   left: 50%;
-//   transform: translate(-50%,-50%);
-//   opacity: 0;
-//   transition: opacity 1s;
-//   pointer-events: none;
-//   top: 50%;
+.modal {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100vh) scale(0);
+  opacity: 0;
+  transition: 1s 0;
+  pointer-events: none;
+  visibility: hidden;
 
-//   &.active {
-//     position: fixed;
-//     opacity: 1;
-//     z-index: 20;
-//     transition: opacity 1s;
+  &.active {
+    position: fixed;
+    opacity: 1;
+    z-index: 20;
+    transition: 1s;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    pointer-events: initial;
+  }
 
-//     pointer-events: initial;
-//   }
+  &__close {
+    position: absolute;
+    right: clamp(30px, 7.661vw, 95px);
+    top: clamp(30px, 3.226vw, 40px);
+    z-index: 20;
 
-//   &__close {
-//     position: absolute;
-//     right: 12px;
-//     top: 12px;
-//     z-index: 20;
-//   }
+    svg {
+      pointer-events: none;
+      transition: all .4s;
+      width: clamp(25px, 4.032vw, 50px);
+      height: clamp(25px, 4.032vw, 50px);
+  
+      fill: rgba(var(--bg-c),1.0);
+    }
 
-//   .close svg {
-//     pointer-events: none;
-//   }
-// }
+      &:hover{
+        svg{
+        fill: rgba(var(--bg-e),1.0);
+      }
+    }
+  }
+}

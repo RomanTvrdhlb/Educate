@@ -152,6 +152,46 @@
     grid-gap: clamp(15px, 3.247vw, 25px);
   }
 
+  &::before, &::after{
+    position: absolute;
+    content: '';
+  
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+    z-index: 0;
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  &::before{
+    left: 0;
+    top: 60%;
+    background-position: top left;
+    background-image: var(--hero-icon-first);
+    width: Min(25.806vw, 320px);
+    height: Min(50.887vw, 631px);
+
+    @include laptop{
+      left: -10%;
+    }
+  }
+
+  &::after{
+    background-image: var(--hero-icon-mode);
+    width:  Min(20.081vw, 249px);
+    height: Min(37.177vw, 461px);
+    right: 0;
+    bottom: -65%;
+
+    @include laptop{
+      right: -5%;
+    }
+  }
+
   .down-button {
     margin-top: -25px;
   }

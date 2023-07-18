@@ -88,6 +88,53 @@
     }
   }
 
+  &__icon{
+    position: absolute;
+
+
+    &--top{
+      top: 0;
+      right: 27px; 
+      transform: translateX(120%);
+    }
+
+    &--left{
+      top: 0;
+      left: 27px; 
+      transform: translateX(-120%);
+    }
+
+    &--thoughts{
+      top: 0;
+      left: 27px; 
+      transform: translateX(-95%);
+
+      @include tablet{
+        display: none;
+      }
+    }
+
+    &--right{
+      top: 0;
+      right: 0; 
+      transform: translateX(75%);
+
+      @include tablet{
+        display: none;
+      }
+    }
+
+    &--mode{
+      top: 4%;
+      right: 0; 
+      transform: translateX(35%);
+
+      @include tablet{
+        display: none;
+      }
+    }
+  }
+
   .main-deskr {
     background-color: rgba(var(--bg-a), 1);
     width: 100%;
@@ -207,30 +254,113 @@
       text-align: center;
     }
   }
-}
 
-.strategy-section {
-  .route-section {
-    &__box {
-      grid-gap: 25px;
+  &--strategy{
+    .route-section {
+      &__box {
+        grid-gap: 25px;
+      }
+  
+      &__wrapper {
+        grid-gap: clamp(30px, 6.494vw, 50px);
+  
+        &--mode {
+          grid-gap: clamp(25px, 5.195vw, 40px);
+          .check-list {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  
+    .main-deskr {
+      margin-bottom: calc(clamp(30px, 7.792vw, 60px) - 25px);
+      * {
+        max-width: 910px;
+      }
     }
 
-    &__wrapper {
-      grid-gap: clamp(30px, 6.494vw, 50px);
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: var(--strategy-icon);
+      background-position: top left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: Min(31.371vw, 389px);
+      height: Min(31.371vw, 389px);
+      z-index: 0;
+      left: 0;
+      bottom: 0;
 
-      &--mode {
-        grid-gap: clamp(25px, 5.195vw, 40px);
-        .check-list {
-          max-width: 100%;
-        }
+  
+      @include small-tablet{
+        display: none;
       }
     }
   }
 
-  .main-deskr {
-    margin-bottom: calc(clamp(30px, 7.792vw, 60px) - 25px);
-    * {
-      max-width: 910px;
+  &--thoughts{
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: var(--route-icon-mode);
+      background-position: top left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: Min(31.371vw, 389px);
+      height: Min(30.806vw, 382px);
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+
+  
+      @include small-tablet{
+        display: none;
+      }
+    }
+  }
+
+  &--intro{
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: var(--intro-icon);
+      background-position: top left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: Min(31.371vw, 389px);
+      height: Min(30.242vw, 375px);
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+
+  
+      @include small-tablet{
+        display: none;
+      }
+    }
+  }
+
+  
+  &--story{
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: var(--story-icon);
+      background-position: top left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: Min(31.371vw, 389px);
+      height: Min(31.694vw, 393px);
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+
+  
+      @include small-tablet{
+        display: none;
+      }
     }
   }
 }

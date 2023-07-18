@@ -1,7 +1,27 @@
 .form-section {
   background-color: rgba(var(--bg-m),1.0);
   padding: clamp(40px, 7.792vw, 60px) 0;
+  position: relative;
 
+
+  
+  &::before{
+    position: absolute;
+    content: '';
+    background-image: var(--form-icon);
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: Min(30.726vw, 381px);
+    height: Min(50.806vw, 630px);
+    z-index: 0;
+    left: 0;
+    bottom: -30%;
+
+    @include small-tablet{
+      display: none;
+    }
+  }
 
   &__box {
     display: flex;
@@ -38,6 +58,11 @@
         font-weight: 400;
         text-align: center;
       }
+    }
+
+
+    &::before{
+      display: none;
     }
   }
 
