@@ -60,7 +60,7 @@
         &--right{
             left: initial;
             right: -30px;
-            top: -15%;
+            top: -5%;
             transform: translateX(100%);
 
             &-center{
@@ -70,12 +70,6 @@
             }
         }
 
-        &--center{
-            top: 50%;
-            transform: translate(-100%, -45%);
-
-        }
-
         &--top{
             left: initial;
             right: -32px;
@@ -83,13 +77,22 @@
             transform: translateX(100%);
 
             &-mode{
-                top: -44%;
+                top: -5%;
             }
         }
 
         &--mode{
             top: -10%;
-            left: -30px;
+            left: 30px;
+
+            &-top{
+                top: -6%;
+            }
+
+            &-left{
+                left: 30px;
+                top: -20%;
+            }
         }
     }
 }

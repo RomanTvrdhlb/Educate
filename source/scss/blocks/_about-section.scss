@@ -141,7 +141,7 @@
 
   &__bg {
     position: absolute;
-    top: 21%;
+    top: 38%;
     left: 0;
     z-index: -1;
 
@@ -411,8 +411,8 @@
       background-position: top right;
       background-size: cover;
       background-repeat: no-repeat;
-      width: Min(25.484vw, 316px);
-      height: Min(50.968vw, 632px);
+      width: Min(25.726vw, 319px);
+      height: Min(50.806vw, 630px);
       z-index: -1;
       right: 0;
 
@@ -422,11 +422,11 @@
     }
 
     &::before {
-      top: 5.5%;
+      top: 12%;
     }
 
     &::after {
-      bottom: 31%;
+      bottom: 19%;
     }
 
     .about-section__bg--bottom {

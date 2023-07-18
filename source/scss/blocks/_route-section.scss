@@ -96,12 +96,20 @@
       top: 0;
       right: 27px; 
       transform: translateX(120%);
+
+      @include tablet{
+        display: none;
+      }
     }
 
     &--left{
       top: 0;
       left: 27px; 
       transform: translateX(-120%);
+
+      @include tablet{
+        display: none;
+      }
     }
 
     &--thoughts{
@@ -179,30 +187,31 @@
     &::before, &::after{
       position: absolute;
       content: '';
-      background-image: var(--route-icon);
-      background-position: top right;
       background-size: cover;
       background-repeat: no-repeat;
-      width: Min(32.661vw, 405px);
-      height: Min(50.645vw, 628px);
       z-index: 0;
   
-
       @include small-tablet{
         display: none;
       }
     }
 
     &::before{
+      background-image: var(--route-icon);
+      background-position: top left;
+      width: Min(31.21vw, 387px);
+      height: Min(37.097vw, 460px);
       left: 0;
-      bottom: 20%;
+      top: 0;
     }
 
     &::after{
-      rotate: 270deg;
+      background-image: var(--route-icon-second);
+      background-position: top right;
+      width:  Min(30.968vw, 384px);
+      height: Min(32.984vw, 409px);
       right: 0;
       bottom: 0;
-      transform: translate(-60%, 5%);
     }
   }
 
@@ -236,13 +245,13 @@
       position: absolute;
       content: '';
       left: 0;
-      bottom: 25%;
+      bottom: 0;
       background-image: var(--invite-icon);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top left;
-      width: Min(38.306vw, 475px);
-      height: Min(45.645vw, 566px);
+      width: Min(33.871vw, 420px);
+      height: Min(36.452vw, 452px);
       z-index: 0;
 
       @include mobile{
