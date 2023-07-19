@@ -26,6 +26,17 @@
         }
     }
 
+    &__deskr{
+        font-size: clamp(14px, 1.532vw, 19px);
+        line-height: 134.211%;
+        margin-top: calc(clamp(30px, 3.629vw, 45px) * -1);
+        padding:0 24px;
+
+        @include mobile{
+            padding: 0;
+        }
+    }
+
     .main-button{
         margin-top: calc(clamp(15px, 4.545vw, 35px) * -1);
         width: 100%;
